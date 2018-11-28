@@ -113,5 +113,5 @@ if [ ! -d "${LOCAL_REPO}/jdk/${JDK_VENDOR}/jdk-${JDK_VERSION}" ]; then
     download_jdk
 fi
 
-JAVA_HOME="${LOCAL_REPO}/jdk/${JDK_VENDOR}/jdk-${JDK_VERSION}" "${LOCAL_REPO}/maven/apache-maven-${MAVEN_VERSION}/bin/mvn" "${1}"
+JAVA_HOME="${LOCAL_REPO}/jdk/${JDK_VENDOR}/jdk-${JDK_VERSION}" "${LOCAL_REPO}/maven/apache-maven-${MAVEN_VERSION}/bin/mvn" "$@"
 
